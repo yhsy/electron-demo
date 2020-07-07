@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo2-邀请小姐姐程序</title>
+    <!-- <script src="./renderer/index.js"></script> -->
+
+
+</head>
+
+<body>
+    <div class="m-invite">
+        <button class="btn-invite">点击邀请小姐姐</button>
+        <div class="invite-list"></div>
+    </div>
+    <script>
+        var fs = require("fs");
+
+        window.onload = function () {
+            const btn = document.querySelector(".btn-invite");
+            const inviteList = document.querySelector(".invite-list");
+
+            btn.addEventListener("click", function () {
+                fs.readFile("renderer/xjj.txt", (err, data) => {
+                    // if (err) throw err;
+                    console.log(data);
+                    inviteList.innerHTML = data;
+                });
+            });
+        };
+    </script>
+
+
+</body>
+
+</html>

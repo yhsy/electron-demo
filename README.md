@@ -20,6 +20,12 @@
 
 #### 3.2 启动应用: `npm run dev`
 
+### 4.demo4-自定义菜单栏
+
+#### 4.1 安装依赖: `npm install`
+
+#### 4.2 启动应用: `npm run dev`
+
 ## 二、推荐学习教程
 
 ### 1. [《Electron 免费视频教程-用前端技术开发桌面应用》](https://jspang.com/detailed?id=62)

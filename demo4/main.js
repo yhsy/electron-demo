@@ -11,8 +11,9 @@ app.on("ready", () => {
     },
   });
 
-  require('./main/menu.js')
-  
+  // require('./main/menu.js')
+  require("./main/teambition.js");
+
   mainWin.loadFile("index.html");
 
   mainWin.on("closed", () => {

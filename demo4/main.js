@@ -9,6 +9,8 @@ app.on("ready", () => {
     webPreferences: {
       nodeIntegration: true,
     },
+    title: "Tembition | 团队协作工具领导者",
+    icon: "./icon/icon-logo2.png",
   });
 
   // require('./main/menu.js')

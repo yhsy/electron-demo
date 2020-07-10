@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo5-右键菜单</title>
+</head>
+
+<body>
+    <h2>鼠标右击出现右键菜单</h2>
+
+    <script>
+        window.onload = () => {
+            const { remote } = require('electron');
+            const { Menu } = remote;
+            var onOff = true;
+
+            let rightTemplate = [
+                {
+                    label: '返回',
+                },
+                {
+                    label: '前进',
+                },
+                {
+                    label: '重新加载',
+                    role: 'reload'
+                },
+                {
+                    label: '隐藏菜单栏',
+                    click: () => {
+                        onOff = false;
+                        Menu.setApplicationMenu(null)
+                    }
+                }
+            ];
+
+            let rightTemplate2 = [
+                {
+                    label: '返回',
+                },
+                {
+                    label: '前进',
+                },
+                {
+                    label: '重新加载',
+                    role: 'reload'
+                },
+                {
+                    label: '显示菜单栏',
+                    click: () => {
+                        onOff = true;
+                        require('./renderer/menu.js')
+                    }
+                }
+            ];
+
+            // 生成菜单
+            let rightMenu = Menu.buildFromTemplate(rightTemplate);
+            let rightMenu2 = Menu.buildFromTemplate(rightTemplate2);
+
+
+            // 监听鼠标右击事件
+            window.addEventListener('contextmenu', function (e) {
+                // alert('111')
+                // 阻止默认事件
+                e.preventDefault();
+                if (onOff) {
+                    //把菜单模板添加到右键菜单
+                    rightMenu.popup({
+                        window: remote.getCurrentWindow()
+                    })
+                } else {
+                    //把菜单模板添加到右键菜单
+                    rightMenu2.popup({
+                        window: remote.getCurrentWindow()
+                    })
+                }
+
+
+            })
+        }
+
+    </script>
+</body>
+
+</html>

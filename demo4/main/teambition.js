@@ -11,6 +11,10 @@ const menuTemplate = [
         icon: "./icon/icon-setting.png",
         enabled: false,
       },
+      // 分割线
+      {
+        type: "separator",
+      },
       {
         label: "退出",
         accelerator: "ctrl + Q",
@@ -29,6 +33,10 @@ const menuTemplate = [
       {
         label: "重做",
         role: "redo",
+      },
+      // 分割线
+      {
+        type: "separator",
       },
       {
         label: "剪切",
@@ -64,6 +72,10 @@ const menuTemplate = [
         role: "reload",
         accelerator: "ctrl + R",
       },
+      // 分割线
+      {
+        type: "separator",
+      },
       {
         label: "放大",
         role: "zoomin",
@@ -78,6 +90,10 @@ const menuTemplate = [
         label: "重置",
         role: "resetzoom",
         accelerator: "ctrl + O",
+      },
+      // 分割线
+      {
+        type: "separator",
       },
       {
         label: "切换全屏",
@@ -107,6 +123,10 @@ const menuTemplate = [
             message: "目前版本是V1.13,没有找到新版本",
           });
         },
+      },
+      // 分割线
+      {
+        type: "separator",
       },
       {
         label: "更新日志",

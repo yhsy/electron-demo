@@ -108,12 +108,22 @@ const menuTemplate = [
       {
         label: "隐藏菜单栏",
         icon: "./icon/icon-hide.png",
+        accelerator: "ctrl + shift + H",
         click: () => {
-          Menu.setApplicationMenu(null);
+          toggleMenu(0);
         },
-
         // enabled: false,
       },
+      // {
+      //   label: "显示菜单栏",
+      //   icon: "./icon/icon-show.png",
+      //   accelerator: "ctrl + shift + S",
+
+      //   click: () => {
+      //     toggleMenu(1);
+      //   },
+      //   // enabled: false,
+      // },
       {
         label: "网络自助测试",
         // enabled: false,
@@ -171,3 +181,11 @@ const menuTemplate = [
 const tembitionMenu = Menu.buildFromTemplate(menuTemplate);
 
 Menu.setApplicationMenu(tembitionMenu);
+
+function toggleMenu(status) {
+  if (status) {
+    Menu.setApplicationMenu(tembitionMenu);
+  } else {
+    Menu.setApplicationMenu(null);
+  }
+}

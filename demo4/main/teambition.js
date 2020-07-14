@@ -107,7 +107,12 @@ const menuTemplate = [
     submenu: [
       {
         label: "隐藏菜单栏",
-        enabled: false,
+        icon: "./icon/icon-hide.png",
+        click: () => {
+          Menu.setApplicationMenu(null);
+        },
+
+        // enabled: false,
       },
       {
         label: "网络自助测试",

@@ -1,5 +1,5 @@
 // 仿 Tembition 菜单栏
-const { Menu, BrowserWindow, shell, dialog } = require("electron");
+const { Menu, BrowserWindow, shell, dialog, BrwoserView } = require("electron");
 
 const menuTemplate = [
   {
@@ -111,7 +111,24 @@ const menuTemplate = [
       },
       {
         label: "网络自助测试",
-        enabled: false,
+        // enabled: false,
+        icon: "./icon/icon-network.png",
+        click: () => {
+          let helpWin = null;
+          helpWin = new BrowserWindow({
+            width: 1000,
+            height: 800,
+            webPreferences: {
+              nodeIntegration: true,
+            },
+          });
+          // 加载远程URL
+          helpWin.loadURL("https://help.teambition.com/");
+
+          helpWin.on("closed", () => {
+            helpWin = null;
+          });
+        },
       },
       {
         label: "检查版本",

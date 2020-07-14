@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "npx electron ."
+    "dev": "npx electron .",
+    "package": "electron-packager ./ Tembition --all --out ./outApp  --overwrite --icon=./img/logo.ico"
   },
   "keywords": [],
   "author": "",

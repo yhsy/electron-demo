@@ -33,6 +33,8 @@
 
 - 新增(electron-packager 打包配置)
 
+### 6.demo6-嵌入页面(Teambition 登录页,拉伸自动调整嵌入页面位置)
+
 ## 二、推荐学习教程
 
 ### 1. [《Electron 免费视频教程-用前端技术开发桌面应用》](https://jspang.com/detailed?id=62)

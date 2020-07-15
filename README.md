@@ -20,6 +20,8 @@
 
 ### 4.demo4-自定义菜单栏
 
+![demo4](http://7n.jsyu.vip/demo4-2.png)
+
 ![demo4](http://7n.jsyu.vip/demo4.png)
 
 - 更新:仿 Tembition 菜单栏(菜单项有 icon 图标,禁用菜单,打开网页,打开提示窗,菜单分隔线,隐藏菜单栏功能),右键菜单(显示/隐藏菜单栏)

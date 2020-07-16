@@ -41,6 +41,8 @@
 
 ![demo7](http://7n.jsyu.vip/demo7.png)
 
+### 7.demo8-选择文件对话框(选择图片并插入)
+
 ## 二、推荐学习教程
 
 ### 1. [《Electron 免费视频教程-用前端技术开发桌面应用》](https://jspang.com/detailed?id=62)

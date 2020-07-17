@@ -43,6 +43,13 @@
 
 ### 8.demo8-选择文件对话框(选择图片并插入)
 
+![demo8](http://7n.jsyu.vip/demo8.png)
+![demo8](http://7n.jsyu.vip/demo8-2.jpg)
+
+### 9.demo9-保存文件对话框(保存网页)
+
+![demo9](http://7n.jsyu.vip/demo9.png)
+
 ## 二、推荐学习教程
 
 ### 1. [《Electron 免费视频教程-用前端技术开发桌面应用》](https://jspang.com/detailed?id=62)

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo10-断网/再次联网 提醒</title>
+</head>
+
+<body>
+    <h2>断网提醒功能</h2>
+
+    <script>
+        // 联网提醒
+        window.addEventListener('online', () => {
+            alert('恭喜你，网络连接上了！')
+        }
+        )
+
+        // 断网提醒
+        window.addEventListener("offline", () => {
+            alert('断网了，请检查网络！！')
+        }
+        )
+
+    </script>
+</body>
+
+</html>

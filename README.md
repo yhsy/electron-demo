@@ -50,6 +50,16 @@
 
 ![demo9](http://7n.jsyu.vip/demo9.png)
 
+### 10.demo10-断网/联网 提醒
+
+- 断网和联网要通过网络设置才能看到
+  ![demo10-1](http://7n.jsyu.vip/demo10-1.png)
+  ![demo10-2](http://7n.jsyu.vip/demo10-2.png)
+
+### 11.demo11-底部消息通知
+
+![demo11](http://7n.jsyu.vip/demo11.png)
+
 ## 二、推荐学习教程
 
 ### 1. [《Electron 免费视频教程-用前端技术开发桌面应用》](https://jspang.com/detailed?id=62)

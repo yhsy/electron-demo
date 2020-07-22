@@ -60,6 +60,10 @@
 
 ![demo11](http://7n.jsyu.vip/demo11.png)
 
+### 12.demo12-注册全局快捷键(退出应用)
+
+![demo12](http://7n.jsyu.vip/demo12.png)
+
 ## 二、推荐学习教程
 
 ### 1. [《Electron 免费视频教程-用前端技术开发桌面应用》](https://jspang.com/detailed?id=62)

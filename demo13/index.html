@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo13-剪贴板事件的使用</title>
+</head>
+
+<body>
+    <h2>demo13-剪贴板事件的使用</h2>
+    <p>粘贴快捷键:Ctrl + V</p>
+    <ul>
+        <li>
+            <h3>1.复制文本(URL链接)</h3>
+            <p>技术胖官网：<span id="pangLink">https://www.jspang.com</span></p>
+            <button id="btnCopy">复制链接</button>
+        </li>
+        <li>
+            <h3>2.复制图片</h3>
+            <img id="xjj" style="width:200px" src="./imgs/xjj.jpg" alt="">
+            <button id="btnImg">复制图片</button>
+        </li>
+        <li>
+            <h3>3.复制HTML</h3>
+            <p>问题:直接用Ctrl + V,发现标签没粘贴,在控制台显示正确 </p>
+            <pre id="codeDemo">
+                <p>我是一个P标签</p>
+            </pre>
+            <button id="btnCode">复制代码</button>
+        </li>
+    </ul>
+
+    <script src="./renderer/index.js"></script>
+</body>
+
+</html>

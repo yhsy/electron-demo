@@ -64,6 +64,10 @@
 
 ![demo12](http://7n.jsyu.vip/demo12.png)
 
+### 13.demo13-剪贴板的使用(复制文本、复制图片、复制 html)
+
+![demo13](http://7n.jsyu.vip/demo13.png)
+
 ## 二、推荐学习教程
 
 ### 1. [《Electron 免费视频教程-用前端技术开发桌面应用》](https://jspang.com/detailed?id=62)

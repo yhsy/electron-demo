@@ -77,6 +77,8 @@
 - 5.打包 win 平台,命令: `npm run build-win`
 - 6.第一次打包慢问题，解决方案(改成国内镜像源)：`npm config set ELECTRON_MIRROR http://npm.taobao.org/mirrors/electron/`
 
+![demo14](http://7n.jsyu.vip/demo14.png)
+
 ## 二、推荐学习教程
 
 ### 1. [《Electron 免费视频教程-用前端技术开发桌面应用》](https://jspang.com/detailed?id=62)

@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "dev": "npx electron .",
-    "package": "npx electron-packager ./ electron-demo --all --out ./outApp  --overwrite --icon=./assets/icon/logo.ico",
-    "package-win": "npx electron-packager ./ electron-demo --platform=win32 --out ./outApp  --overwrite --icon=./assets/icon/logo.ico"
+    "build": "npx electron-packager ./ electron-demo --all --out ./outApp  --overwrite --icon=./assets/icon/logo.ico",
+    "build-win": "npx electron-packager ./ electron-demo --platform=win32 --out ./outApp  --overwrite --icon=./assets/icon/logo.ico"
   },
   "keywords": [],
   "author": "",

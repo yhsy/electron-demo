@@ -68,6 +68,15 @@
 
 ![demo13](http://7n.jsyu.vip/demo13.png)
 
+### 14.demo14-打包应用
+
+- 1.进入目录,命令：`cd demo14`
+- 2.安装依赖: 命令：`npm i`
+- 3.本地运行: 命令: `npm run dev`,这里要修改下`main.js`里的 icon 路径，不然弹出提示
+- 4.打包所有平台,命令: `npm run build`
+- 5.打包 win 平台,命令: `npm run build-win`
+- 6.第一次打包慢问题，解决方案(改成国内镜像源)：`npm config set ELECTRON_MIRROR http://npm.taobao.org/mirrors/electron/`
+
 ## 二、推荐学习教程
 
 ### 1. [《Electron 免费视频教程-用前端技术开发桌面应用》](https://jspang.com/detailed?id=62)

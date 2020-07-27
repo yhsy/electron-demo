@@ -20,6 +20,9 @@ app.on("ready", () => {
     show: false,
   });
 
+  // 自定义菜单栏
+  require("./main/teambition.js");
+
   mainWin.loadFile("index.html");
 
   // 初始化后再显示

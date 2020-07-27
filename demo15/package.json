@@ -1,0 +1,22 @@
+{
+  "name": "demo15",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "npx electron .",
+    "build": "npx electron-packager ./ electron-demo --all --out ./outApp  --overwrite --icon=./assets/icon/logo.ico",
+    "build-win": "npx electron-packager ./ electron-demo --platform=win32 --out ./outApp  --overwrite --icon=./assets/icon/logo.ico"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.1.1",
+    "electron-packager": "^15.0.0"
+  },
+  "devDependencies": {
+    "electron": "^9.1.1",
+    "electron-packager": "^15.0.0"
+  }
+}

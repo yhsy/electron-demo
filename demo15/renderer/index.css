@@ -1,9 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.g-box {
+  position: relative;
+  width: 1184px;
+  height: 736px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+}
+
 #home {
+  width: 800px;
+  height: 680px;
+  /* background-color: red; */
+}
+/* .m-btns {
   width: 1160px;
   height: 720px;
   text-align: center;
   margin: 0 auto;
-}
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+} */
 
 .m-mask {
   position: relative;

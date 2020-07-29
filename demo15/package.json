@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "npx electron .",
     "start": "nodemon --watch main.js --exec npx electron .",
-    "build": "npx electron-packager ./ electron-demo --all --out ./outApp  --overwrite --icon=./assets/icon/logo.ico",
-    "build-win": "npx electron-packager ./ electron-demo --platform=win32 --out ./outApp  --overwrite --icon=./assets/icon/logo.ico"
+    "build": "npx electron-packager ./ electron-teambition --all --out ./outApp  --overwrite --icon=./assets/icon/logo.ico",
+    "build-win": "npx electron-packager ./ electron-teambition --platform=win32 --out ./outApp  --overwrite --icon=./assets/icon/logo.ico"
   },
   "keywords": [],
   "author": "",

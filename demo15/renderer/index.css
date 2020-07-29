@@ -5,17 +5,16 @@ body {
 
 .g-box {
   position: relative;
-  width: 1184px;
-  height: 736px;
+  min-width: 1184px;
+  min-height: 736px;
   text-align: center;
   margin: 0 auto;
   background-color: #f1f1f1;
 }
 
 #home {
-  width: 800px;
-  height: 680px;
-  /* background-color: red; */
+  width: 90%;
+  height: 99vh;
 }
 /* .m-btns {
   width: 1160px;

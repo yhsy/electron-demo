@@ -7,7 +7,8 @@
     "start": "nodemon --watch main.js --exec npx electron .",
     "dev": "npx electron .",
     "build": "npx electron-packager ./ electron-teambition --all --out ./outApp  --overwrite --icon=./assets/icon/logo.ico",
-    "build-win": "npx electron-packager ./ electron-teambition --platform=win32 --out ./outApp  --overwrite --icon=./assets/icon/logo.ico"
+    "build-win": "npx electron-packager ./ electron-teambition --platform=win32 --out ./outApp  --overwrite --icon=./assets/icon/logo.ico",
+    "build-mac": "sudo npx electron-packager ./ electron-teambition --platform=darwin --out ./outApp  --overwrite --icon=./assets/icon/icon-logo.icns"
   },
   "keywords": [],
   "author": "",

@@ -7,7 +7,8 @@ const $ = (el) => {
   return document.querySelector(el);
 };
 
-var onOff = true;
+// 菜单栏开关
+let onOff = true;
 
 window.onload = () => {
   const webview = $("webview");
@@ -134,6 +135,7 @@ window.onload = () => {
     // console.log(args);
     if (!args) {
       Menu.setApplicationMenu(null);
+      onOff = false;
     }
   });
 

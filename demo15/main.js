@@ -1,4 +1,9 @@
 const { app, BrowserWindow, shell, Menu, ipcMain } = require("electron");
+const path = require("path");
+
+// icon图标地址(使用绝对地址,相对地址的话打包会出错)
+const iconPath = path.join(__dirname, "assets/icon/");
+const iconLogo = path.join(__dirname, "assets/icon/icon-logo.png");
 
 let mainWin = null;
 
@@ -9,7 +14,10 @@ function createWindow() {
   mainWin = new BrowserWindow({
     width: 1200,
     height: 800,
-    icon: "./assets/icon/icon-logo.png",
+    // icon: "./assets/icon/icon-logo.png",
+    icon: iconLogo,
+    // 打包路径
+    // icon: "./resources/app/assets/icon/icon-logo.png",
     // 能否调节窗口大小(含最大化)
     // resizable: false,
     webPreferences: {
@@ -39,7 +47,7 @@ function createWindow() {
   });
 }
 
-// 自定义菜单
+// 自定义菜单(打包)
 function createMenu() {
   const menuTemplate = [
     {
@@ -48,7 +56,8 @@ function createMenu() {
         {
           label: "偏好设置",
           accelerator: "ctrl + ,",
-          icon: "./assets/icon/icon-setting.png",
+          // icon: "./resources/app/assets/icon/icon-setting.png",
+          icon: `${iconPath}icon-setting.png`,
           enabled: false,
         },
         // 分割线
@@ -59,7 +68,8 @@ function createMenu() {
           label: "退出",
           accelerator: "ctrl + Q",
           role: "quit",
-          icon: "./assets/icon/icon-logout.png",
+          // icon: "./resources/app/assets/icon/icon-logout.png",
+          icon: `${iconPath}icon-logout.png`,
         },
       ],
     },
@@ -147,7 +157,8 @@ function createMenu() {
       submenu: [
         {
           label: "隐藏菜单栏",
-          icon: "./assets/icon/icon-hide.png",
+          // icon: "./resources/app/assets/icon/icon-hide.png",
+          icon: `${iconPath}icon-hide.png`,
           accelerator: "ctrl + shift + H",
           click: () => {
             // 隐藏会闪退窗口(bug)
@@ -158,7 +169,8 @@ function createMenu() {
         },
         {
           label: "网络自助测试",
-          icon: "./assets/icon/icon-network.png",
+          // icon: "./resources/app/assets/icon/icon-network.png",
+          icon: `${iconPath}icon-network.png`,
           click: () => {
             let helpWin = null;
             helpWin = new BrowserWindow({
@@ -178,7 +190,8 @@ function createMenu() {
         },
         {
           label: "检查版本",
-          icon: "./assets/icon/icon-update.png",
+          // icon: "./resources/app/assets/icon/icon-update.png",
+          icon: `${iconPath}icon-update.png`,
           click: () => {
             dialog.showMessageBox({
               type: "info",
@@ -193,7 +206,8 @@ function createMenu() {
         },
         {
           label: "更新日志",
-          icon: "./assets/icon/icon-log.png",
+          // icon: "./resources/app/assets/icon/icon-log.png",
+          icon: `${iconPath}icon-log.png`,
           click: () => {
             shell.openExternal(
               "https://dn-st.teambition.net/windows/zh/changelog.html"
@@ -202,7 +216,8 @@ function createMenu() {
         },
         {
           label: "调试工具",
-          icon: "./assets/icon/icon-dev.png",
+          // icon: "./resources/app/assets/icon/icon-dev.png",
+          icon: `${iconPath}icon-dev.png`,
           role: "toggledevtools",
         },
       ],

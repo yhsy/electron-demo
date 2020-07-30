@@ -4,21 +4,16 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "npx electron .",
     "start": "nodemon --watch main.js --exec npx electron .",
+    "dev": "npx electron .",
     "build": "npx electron-packager ./ electron-teambition --all --out ./outApp  --overwrite --icon=./assets/icon/logo.ico",
     "build-win": "npx electron-packager ./ electron-teambition --platform=win32 --out ./outApp  --overwrite --icon=./assets/icon/logo.ico"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "electron": "^9.1.1",
-    "electron-packager": "^15.0.0"
-  },
   "devDependencies": {
-    "electron": "^9.1.1",
-    "electron-packager": "^15.0.0",
-    "nodemon": "^2.0.4"
+    "electron": "^9.1.2",
+    "electron-packager": "^15.0.0"
   }
 }
